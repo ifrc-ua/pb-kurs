@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Канал по категоріях</title>
+<meta name="description" id="metaDesc" content="">
+<link rel="icon" href="data:,">
+<link href="styles.css" rel="stylesheet">
+<script src="lib/d3.min.js" defer></script>
+
+<script src="copy.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div class="widget" id="widget">
+
+  <p class="sr-only" data-copy="srWidget"></p>
+
+  <header class="head">
+    <div class="head-title">
+      <span class="overline" data-copy="overline"></span>
+      <h1 class="title" data-copy="title"></h1>
+      <p class="subtitle" data-copy="subtitle"></p>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span class="legend-item"><i class="sw sw-e"></i><span data-copy="legendOnline"></span></span>
+      <span class="legend-item"><i class="sw sw-p"></i><span data-copy="legendOffline"></span></span>
+    </div>
+  </header>
+
+  <div class="main">
+
+    <section class="scene" data-aria="ariaScene">
+      <div class="scene-head">
+        <div class="year-axis" id="yearAxis" role="group" data-aria="ariaYearAxis"></div>
+      </div>
+
+      <div class="bars" id="bars" data-aria="ariaBars"></div>
+
+      <p class="scene-cap" id="sceneCap"></p>
+    </section>
+
+    <aside class="panel" id="panel" aria-live="polite" data-aria="ariaPanel"></aside>
+  </div>
+
+  <footer class="notes">
+    <ul class="note-list" id="noteList"></ul>
+  </footer>
+
+  <div class="loading" id="loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <span id="loadingText">Завантаження…</span>
+  </div>
+</div>
+</body>
+</html>

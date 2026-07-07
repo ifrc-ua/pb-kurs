@@ -1,0 +1,266 @@
+{
+ "meta": {
+  "generated": "2026-06-22",
+  "k_threshold": 5,
+  "years": [
+   2021,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "categories": [
+   {
+    "code": "education-general",
+    "label": "Освіта (загальна)"
+   },
+   {
+    "code": "education-school",
+    "label": "Шкільні"
+   },
+   {
+    "code": "education-preschool",
+    "label": "Дошкільні"
+   },
+   {
+    "code": "education-extracurricular",
+    "label": "Позашкільні"
+   },
+   {
+    "code": "improvement-general",
+    "label": "Благоустрій"
+   },
+   {
+    "code": "improvement-streets",
+    "label": "Благоустрій малих вулиць"
+   },
+   {
+    "code": "heritage",
+    "label": "Спадщина"
+   },
+   {
+    "code": "greenery",
+    "label": "Зелені зони"
+   },
+   {
+    "code": "afu-support",
+    "label": "Допомога ЗСУ"
+   },
+   {
+    "code": "accessibility",
+    "label": "Доступність"
+   },
+   {
+    "code": "other",
+    "label": "Інше"
+   }
+  ],
+  "channels": [
+   {
+    "code": "electronic",
+    "label": "Онлайн (BankID)",
+    "source": "Електронний",
+    "color": "#654EA3"
+   },
+   {
+    "code": "paper",
+    "label": "Офлайн (ЦНАП)",
+    "source": "Паперовий",
+    "color": "#0E7C8C"
+   }
+  ],
+  "totals": {
+   "electronic": 558354,
+   "paper": 121624
+  },
+  "note": "Канал голосування доступний лише з 2021 (2022 — БУ не проводився). Тематичні категорії — з 2019, але до 2021 каналу ще немає, тому в цьому віджеті їх немає. Набір категорій змінювався щороку, тож у кожному році показано лише наявні того року. «Офлайн (ЦНАП)» — адміністратор вносив голос з документів; паперових бюлетенів не було (METHODOLOGY §2.2)."
+ },
+ "by_year_category_channel": [
+  {
+   "year": 2021,
+   "category": "education-general",
+   "electronic": 41574,
+   "paper": 11670
+  },
+  {
+   "year": 2021,
+   "category": "improvement-streets",
+   "electronic": 16928,
+   "paper": 8202
+  },
+  {
+   "year": 2021,
+   "category": "heritage",
+   "electronic": 11588,
+   "paper": 5055
+  },
+  {
+   "year": 2021,
+   "category": "other",
+   "electronic": 21981,
+   "paper": 7350
+  },
+  {
+   "year": 2023,
+   "category": "education-general",
+   "electronic": 31351,
+   "paper": 4640
+  },
+  {
+   "year": 2023,
+   "category": "improvement-general",
+   "electronic": 13980,
+   "paper": 3215
+  },
+  {
+   "year": 2023,
+   "category": "improvement-streets",
+   "electronic": 8747,
+   "paper": 3029
+  },
+  {
+   "year": 2023,
+   "category": "greenery",
+   "electronic": 4578,
+   "paper": 1499
+  },
+  {
+   "year": 2024,
+   "category": "education-school",
+   "electronic": 38629,
+   "paper": 6783
+  },
+  {
+   "year": 2024,
+   "category": "education-preschool",
+   "electronic": 19245,
+   "paper": 4401
+  },
+  {
+   "year": 2024,
+   "category": "education-extracurricular",
+   "electronic": 10080,
+   "paper": 2188
+  },
+  {
+   "year": 2024,
+   "category": "improvement-general",
+   "electronic": 7277,
+   "paper": 3387
+  },
+  {
+   "year": 2024,
+   "category": "improvement-streets",
+   "electronic": 12364,
+   "paper": 4816
+  },
+  {
+   "year": 2024,
+   "category": "other",
+   "electronic": 16045,
+   "paper": 5287
+  },
+  {
+   "year": 2025,
+   "category": "education-school",
+   "electronic": 30270,
+   "paper": 3895
+  },
+  {
+   "year": 2025,
+   "category": "education-preschool",
+   "electronic": 21174,
+   "paper": 2940
+  },
+  {
+   "year": 2025,
+   "category": "education-extracurricular",
+   "electronic": 8954,
+   "paper": 1803
+  },
+  {
+   "year": 2025,
+   "category": "improvement-general",
+   "electronic": 14854,
+   "paper": 3033
+  },
+  {
+   "year": 2025,
+   "category": "improvement-streets",
+   "electronic": 15405,
+   "paper": 3253
+  },
+  {
+   "year": 2025,
+   "category": "accessibility",
+   "electronic": 4824,
+   "paper": 1942
+  },
+  {
+   "year": 2025,
+   "category": "other",
+   "electronic": 12412,
+   "paper": 2703
+  },
+  {
+   "year": 2026,
+   "category": "education-school",
+   "electronic": 75786,
+   "paper": 8221
+  },
+  {
+   "year": 2026,
+   "category": "education-preschool",
+   "electronic": 35310,
+   "paper": 4996
+  },
+  {
+   "year": 2026,
+   "category": "education-extracurricular",
+   "electronic": 9822,
+   "paper": 1522
+  },
+  {
+   "year": 2026,
+   "category": "improvement-general",
+   "electronic": 14844,
+   "paper": 3036
+  },
+  {
+   "year": 2026,
+   "category": "improvement-streets",
+   "electronic": 14057,
+   "paper": 2952
+  },
+  {
+   "year": 2026,
+   "category": "heritage",
+   "electronic": 6707,
+   "paper": 1181
+  },
+  {
+   "year": 2026,
+   "category": "greenery",
+   "electronic": 5412,
+   "paper": 2056
+  },
+  {
+   "year": 2026,
+   "category": "afu-support",
+   "electronic": 14003,
+   "paper": 3142
+  },
+  {
+   "year": 2026,
+   "category": "accessibility",
+   "electronic": 2561,
+   "paper": 479
+  },
+  {
+   "year": 2026,
+   "category": "other",
+   "electronic": 17592,
+   "paper": 2948
+  }
+ ]
+}
