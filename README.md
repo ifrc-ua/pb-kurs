@@ -6,6 +6,32 @@
 
 Дані у віджетах агреговані, знеособлені.
 
+## Перегляд і вставка
+
+> На GitHub ці файли відкриваються як код. Щоб **побачити віджети наживо** і взяти код для вставки — відкрийте галерею.
+
+### ▶ [Галерея віджетів →](https://ifrc-ua.github.io/pb-kurs/)
+
+Кожен віджет показано наживо; поруч — готовий код і кнопка «Копіювати». Вставляється на будь-який сайт, як відео з YouTube: скопіювали код, додали в HTML-блок сторінки.
+
+Або одразу конкретний віджет (відкриється у браузері):
+
+- [10 років за один погляд](https://ifrc-ua.github.io/pb-kurs/at-a-glance/)
+- [Хто творить місто](https://ifrc-ua.github.io/pb-kurs/who-builds/)
+- [Клуб постійних](https://ifrc-ua.github.io/pb-kurs/cohort-river/)
+- [Пульс голосування](https://ifrc-ua.github.io/pb-kurs/clock-map/)
+- [Цифровий розрив](https://ifrc-ua.github.io/pb-kurs/digital-divide/)
+- [Проєкти по громадах](https://ifrc-ua.github.io/pb-kurs/communities-projects/)
+- [Де живуть виборці](https://ifrc-ua.github.io/pb-kurs/city-heatmap/)
+- [Потоки: місто ↔ села](https://ifrc-ua.github.io/pb-kurs/flows/)
+- [Прожектор проєкту](https://ifrc-ua.github.io/pb-kurs/spotlight/)
+- [Еволюція пріоритетів](https://ifrc-ua.github.io/pb-kurs/priorities/)
+- [Голоси проти грошей](https://ifrc-ua.github.io/pb-kurs/votes-vs-money/)
+- [Графік фінансування](https://ifrc-ua.github.io/pb-kurs/budget-bars/)
+- [Ширина голосу](https://ifrc-ua.github.io/pb-kurs/vote-breadth/)
+- [Правила по роках](https://ifrc-ua.github.io/pb-kurs/rules-timeline/)
+- [Канал по категоріях](https://ifrc-ua.github.io/pb-kurs/channel-categories/)
+
 ## Склад
 
 - 15 тек віджетів – `at-a-glance`, `budget-bars`, `channel-categories`, `city-heatmap`, `clock-map`, `cohort-river`, `communities-projects`, `digital-divide`, `flows`, `priorities`, `rules-timeline`, `spotlight`, `vote-breadth`, `votes-vs-money`, `who-builds`
