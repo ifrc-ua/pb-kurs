@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Віджети — Бюджет участі Івано-Франківська</title>
+<meta name="description" content="15 інтерактивних віджетів десяти років бюджету участі Івано-Франківської громади — готові до вставки на будь-який сайт.">
+<link rel="icon" href="data:,">
+<style>
+@font-face{font-family:"Phenomena";font-style:normal;font-weight:700;font-display:swap;src:url("at-a-glance/fonts/Phenomena-Bold.woff2") format("woff2");}
+@font-face{font-family:"Phenomena";font-style:normal;font-weight:900;font-display:swap;src:url("at-a-glance/fonts/Phenomena-Black.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("at-a-glance/fonts/inter-cyrillic.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("at-a-glance/fonts/inter-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("at-a-glance/fonts/inter-cyrillic.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("at-a-glance/fonts/inter-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("at-a-glance/fonts/inter-cyrillic.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("at-a-glance/fonts/inter-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:"Inter Tight";font-style:normal;font-weight:800;font-display:swap;src:url("at-a-glance/fonts/inter-tight-cyrillic.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:"Inter Tight";font-style:normal;font-weight:800;font-display:swap;src:url("at-a-glance/fonts/inter-tight-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+:root{
+  --canvas:#FDFDFD;--ink:#1A1A1A;--p900:#4E3C84;--p500:#654EA3;--p300:#7B66B8;
+  --p100:#EEEAF7;--p50:#F6F4FB;--sec500:#FFEC08;--n300:#CACAD1;--n200:#E2E2E6;--n50:#F7F7F8;
+  --display:"Phenomena","Inter Tight",system-ui,sans-serif;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--body);line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+.hero{padding:56px 0 40px;border-bottom:1px solid var(--n200)}
+.hero .kicker{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--p500);margin:0 0 14px}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(32px,5vw,58px);line-height:1.02;margin:0 0 18px;letter-spacing:-.01em}
+.hero h1 span{color:var(--p500)}
+.hero .lead{font-size:19px;max-width:680px;margin:0 0 10px;color:#333}
+.hero .note{font-size:15px;color:#444;max-width:680px;margin:18px 0 0;background:var(--p50);border:1px solid var(--p100);border-radius:12px;padding:13px 16px;line-height:1.5}
+.hero .note code{font:600 13.5px ui-monospace,Consolas,monospace;background:#fff;border:1px solid var(--n200);border-radius:5px;padding:1px 6px;color:var(--p900)}
+.hero .meta{font-size:15px;color:#666;margin-top:18px;line-height:1.6}
+.hero .meta a{color:var(--p500);font-weight:600;text-decoration:none}
+.hero .meta a:hover{text-decoration:underline}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;padding:40px 0 24px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+
+.card{border:1px solid var(--n200);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.card-head{padding:18px 20px 4px}
+.card-head h2{font-family:var(--display);font-weight:800;font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+.card-head p{font-size:14.5px;color:#555;margin:0 0 12px}
+
+.preview{position:relative;height:400px;background:var(--n50);border-top:1px solid var(--n200);border-bottom:1px solid var(--n200);overflow:hidden}
+.preview iframe{width:100%;height:100%;border:0;display:block}
+.preview .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#999;font-size:14px;gap:9px}
+.preview .ph i{width:16px;height:16px;border:2px solid var(--n300);border-top-color:var(--p500);border-radius:50%;animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.preview .fade{position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none}
+.preview .open{position:absolute;right:12px;bottom:10px;z-index:2;background:#fff;border:1px solid var(--n300);border-radius:8px;padding:6px 12px;font:600 13px var(--body);color:var(--p500);text-decoration:none}
+.preview .open:hover{border-color:var(--p300)}
+
+.embed{padding:16px 20px 20px;display:flex;flex-direction:column;gap:10px}
+.embed textarea{width:100%;height:64px;resize:none;border:1px solid var(--n300);border-radius:10px;background:var(--n50);padding:10px 12px;font:13px/1.4 ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;color:#333;white-space:pre}
+.embed textarea:focus{outline:2px solid var(--p300);outline-offset:1px}
+.embed .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.btn{background:var(--p500);color:#fff;border:0;border-radius:10px;padding:11px 20px;font:700 15px var(--body);cursor:pointer}
+.btn:hover{background:var(--p900)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.btn.ok{background:#fff;color:var(--ink);box-shadow:0 0 0 3px var(--sec500)}
+.embed .hint{font-size:13px;color:#888}
+
+.footer{border-top:1px solid var(--n200);padding:28px 0 48px;font-size:14px;color:#777;line-height:1.6}
+.footer a{color:var(--p500);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.noscript{max-width:1180px;margin:0 auto;padding:24px;font-size:16px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <p class="kicker">Бюджет участі · Івано-Франківська громада</p>
+  <h1>Віджети <span>для вставки</span> на ваш сайт</h1>
+  <p class="lead">15 інтерактивних візуалізацій десяти років бюджету участі Івано-Франківської громади. Візьміть будь-яку і вставте до себе (до прикладу, як відео з YouTube): скопіюйте код і додайте в HTML-блок сторінки.</p>
+  <p class="note">У коді можна змінити <code>height</code> — це висота рамки в пікселях: збільшіть, якщо внизу з'являється смуга прокрутки, або зменшіть, якщо лишається порожнє місце. Ширину лишайте <code>100%</code> — віджет сам займе всю ширину блоку, куди ви його вставите.</p>
+  <p class="meta">Стаття-першоджерело: <a href="https://kurs.if.ua/article/desyat-vesen-ivano-frankivskogo-byudzhetu-uchasti/" target="_blank" rel="noopener">КУРС: «Десять весен івано-франківського бюджету участі» →</a></p>
+</div></header>
+
+<main class="wrap"><div class="grid" id="grid"></div></main>
+
+<noscript><div class="noscript">Щоб побачити прев'ю віджетів і скопіювати коди для вставки, увімкніть JavaScript. Кожен віджет також доступний окремо за адресою <code>https://ifrc-ua.github.io/pb-kurs/&lt;назва&gt;/</code>.</div></noscript>
+
+<footer class="footer"><div class="wrap">
+  Дані: <a href="https://mvk.if.ua/" target="_blank" rel="noopener">Івано-Франківська міська рада</a>. Мапи: <a href="https://data.humdata.org/dataset/cod-ab-ukr" target="_blank" rel="noopener">OCHA</a>. Аналітика та візуалізації: <a href="https://www.facebook.com/if.regional.center" target="_blank" rel="noopener">ГО «Івано-Франківський регіональний центр»</a>. Вбудовуючи віджет, ви погоджуєтесь зазначати джерела. Ліцензія коду — MIT, даних — CC BY 4.0.
+</div></footer>
+
+<script>
+var BASE = "https://ifrc-ua.github.io/pb-kurs";
+var WIDGETS = [
+  {slug:"at-a-glance",         title:"10 років за один погляд", h:640,  desc:"Оглядова картка: шість ключових чисел бюджету участі та спарклайни за роками."},
+  {slug:"who-builds",          title:"Хто творить місто",       h:1540, desc:"Хто подає і хто виграє проєкти — жінки, чоловіки."},
+  {slug:"cohort-river",        title:"Клуб постійних",          h:1620, desc:"Скільки людей повертаються голосувати рік за роком — постійні виборці проти новачків."},
+  {slug:"clock-map",           title:"Пульс голосування",       h:740,  desc:"Мапа громади й доба голосування: коли і як (офлайн, онлайн) голосували мешканці."},
+  {slug:"digital-divide",      title:"Цифровий розрив",         h:2860, desc:"Голосування онлайн (BankID) проти офлайн (ЦНАП): як цифрове голосування різниться по населених пунктах і за статтю."},
+  {slug:"communities-projects",title:"Проєкти по громадах",     h:3460, desc:"Місто й села поруч: скільки проєктів і голосів дав кожен населений пункт."},
+  {slug:"city-heatmap",        title:"Де живуть виборці",       h:1090, desc:"Теплова карта міста: де саме мешкають ті, хто голосував."},
+  {slug:"flows",               title:"Потоки: місто ↔ села",    h:975,  desc:"Потоки голосів між містом і селами: за чиї проєкти голосують люди."},
+  {slug:"spotlight",           title:"Прожектор проєкту",       h:780,  desc:"Прожектор на один проєкт: хто його підтримав і звідки прийшли голоси."},
+  {slug:"priorities",          title:"Еволюція пріоритетів",    h:1350, desc:"Потік пріоритетів: як змінювалися теми проєктів за десять років."},
+  {slug:"votes-vs-money",      title:"Голоси проти грошей",     h:1130, desc:"Скільки голосів і скільки грошей отримували проєкти: як це співвідноситься."},
+  {slug:"budget-bars",         title:"Графік фінансування",     h:630,  desc:"Обсяг фінансування бюджету участі рік за роком."},
+  {slug:"vote-breadth",        title:"Ширина голосу",           h:1560, desc:"«Ширина» голосу за роками: за скільки проєктів голосує одна людина."},
+  {slug:"rules-timeline",      title:"Правила по роках",        h:420,  desc:"Як змінювалися правила бюджету участі: таймлайн ключових рішень."},
+  {slug:"channel-categories",  title:"Канал по категоріях",     h:1540, desc:"Онлайн чи ЦНАП: як канал голосування різниться між категоріями проєктів."}
+];
+
+function embedCode(w){
+  return '<iframe src="' + BASE + '/' + w.slug + '/" width="100%" height="' + w.h +
+         '" style="border:0;max-width:100%" loading="lazy" allowfullscreen title="' + w.title + '"></iframe>';
+}
+
+var grid = document.getElementById("grid");
+WIDGETS.forEach(function(w){
+  var card = document.createElement("article");
+  card.className = "card";
+
+  var head = document.createElement("div");
+  head.className = "card-head";
+  var h2 = document.createElement("h2"); h2.textContent = w.title;
+  var p = document.createElement("p"); p.textContent = w.desc;
+  head.appendChild(h2); head.appendChild(p);
+
+  var prev = document.createElement("div");
+  prev.className = "preview";
+  var ph = document.createElement("div");
+  ph.className = "ph"; ph.innerHTML = '<i></i>Прев\'ю завантажується…';
+  var frame = document.createElement("iframe");
+  frame.title = w.title + " — прев'ю";
+  frame.loading = "lazy";
+  frame.setAttribute("data-src", BASE + "/" + w.slug + "/");
+  frame.style.visibility = "hidden";
+  frame.addEventListener("load", function(){
+    if (frame.src){ frame.style.visibility = "visible"; if (ph.parentNode) ph.remove(); }
+  });
+  var open = document.createElement("a");
+  open.className = "open"; open.href = BASE + "/" + w.slug + "/";
+  open.target = "_blank"; open.rel = "noopener";
+  open.textContent = "Відкрити повністю ↗";
+  var fade = document.createElement("div"); fade.className = "fade";
+  prev.appendChild(ph); prev.appendChild(frame); prev.appendChild(fade); prev.appendChild(open);
+
+  var embed = document.createElement("div");
+  embed.className = "embed";
+  var ta = document.createElement("textarea");
+  ta.readOnly = true; ta.rows = 3;
+  ta.setAttribute("aria-label", "Код для вставки: " + w.title);
+  ta.value = embedCode(w);
+  var row = document.createElement("div"); row.className = "row";
+  var btn = document.createElement("button");
+  btn.type = "button"; btn.className = "btn"; btn.textContent = "Копіювати код";
+  var hint = document.createElement("span"); hint.className = "hint";
+  hint.textContent = "Вставте у HTML-блок вашої сторінки";
+  row.appendChild(btn); row.appendChild(hint);
+  embed.appendChild(ta); embed.appendChild(row);
+
+  btn.addEventListener("click", function(){ copyCode(ta, btn); });
+
+  card.appendChild(head); card.appendChild(prev); card.appendChild(embed);
+  grid.appendChild(card);
+});
+
+// ліниве завантаження прев'ю — src проставляється лише коли картка близько до екрана
+function loadFrame(f){
+  if (f.src) return;
+  f.src = f.getAttribute("data-src");
+}
+if ("IntersectionObserver" in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ loadFrame(e.target); io.unobserve(e.target); }
+    });
+  }, {rootMargin: "600px 0px"});
+  document.querySelectorAll(".preview iframe").forEach(function(f){ io.observe(f); });
+} else {
+  document.querySelectorAll(".preview iframe").forEach(loadFrame);
+}
+
+// копіювання: сучасний clipboard API з фолбеком на execCommand
+function flashOk(btn){
+  var old = btn.textContent;
+  btn.textContent = "Скопійовано ✓"; btn.classList.add("ok");
+  setTimeout(function(){ btn.textContent = old; btn.classList.remove("ok"); }, 2000);
+}
+function copyCode(ta, btn){
+  var text = ta.value;
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){ flashOk(btn); }, function(){ legacyCopy(ta, btn); });
+  } else {
+    legacyCopy(ta, btn);
+  }
+}
+function legacyCopy(ta, btn){
+  ta.focus(); ta.select();
+  try { if (document.execCommand("copy")) flashOk(btn); } catch(e){}
+  window.getSelection().removeAllRanges();
+}
+</script>
+</body>
+</html>
